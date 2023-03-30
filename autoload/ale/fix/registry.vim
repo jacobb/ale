@@ -630,6 +630,11 @@ let s:default_registry = {
 \       'function': 'ale#fixers#erbformatter#Fix',
 \       'suggested_filetypes': ['eruby'],
 \       'description': 'Apply erb-formatter -w to eruby/erb files.',
+\   },
+\   'djlint': {
+\       'function': 'ale#fixers#djlint#Fix',
+\       'suggested_filetypes': ['html', 'htmldjango'],
+\       'description': 'Django HTML template',
 \   }
 \}
 
