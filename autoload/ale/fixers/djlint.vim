@@ -3,7 +3,7 @@ scriptencoding utf-8
 " Description: Sort TailwindCSS classes with djlint
 
 call ale#Set('html_djlint_executable', 'djlint')
-call ale#Set('html_djlint_options', '')
+call ale#Set('html_djlint_options', '--reformat')
 
 function! ale#fixers#djlint#Fix(buffer) abort
     let l:executable = ale#Var(a:buffer, 'html_djlint_executable')
