@@ -12,6 +12,5 @@ function! ale#fixers#djlint#Fix(buffer) abort
     return {
     \   'command': ale#Escape(l:executable)
     \       . (empty(l:options) ? '' : ' ' . l:options)
-    \       . ' --stdin'
     \}
 endfunction
